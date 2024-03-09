@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Camile</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">ClimaInfo</h1>
+    </header>
+    <main class="main">
+        <section class="s__dashboard">
+            <div class="d__upCharts">
+                <div id="map" class="d__map">map</div>
+                <div class="d__barsChart">
+                    <div class="d__barChart"><canvas id="chart1"></canvas></div>
+                    <div class="d__barChart"><canvas id="chart2"></canvas></div>
+                    <div class="d__barChart"><canvas id="chart3"></canvas></div>
+                    <div class="d__barChart"><canvas id="chart4"></canvas></div>
+                </div>
+            </div>
+            <div class="d__timelines">
+                <canvas id="timeline1" width="90vw" height="10vh"></canvas>
+                <canvas id="timeline2" width="90vw" height="10vh"></canvas>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
