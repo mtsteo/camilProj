@@ -79,5 +79,20 @@ main{
 
 
 @media screen and (max-width: 765px) {
+    .d__barsChart {
+        grid-template-columns: 100%;
+    }
+
+    .s__dashboard {
+        width: 95vw;
+        height: 90em;
     
+    }
+
+    .d__timelines{
+       padding-top: 50%;
+        
+    }
+
 }
+
