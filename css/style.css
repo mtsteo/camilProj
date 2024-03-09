@@ -5,39 +5,40 @@
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     background-color: #FAFAFA;
+
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main{
+    margin: 2rem 2rem ;
 }
+
 .s__dashboard {
-    width: 100vw;
+    width: 95vw;
     height: 90vh;
-    margin: 1.5rem 1.5rem;
+
 }
 
 .d__upCharts {
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 1.5rem;
 }
 
-.d__map {
+.d__map  {
     height: 60vh;
-    margin-right: 1.5rem;
     box-shadow: -6px 12px 15px 0px rgba(0,0,0,0.1);
 }
+
 
 .d__barsChart {
+    height: 60vh;
     display: grid;
     grid-template-columns: 50% 50%;
-    box-shadow: -6px 12px 15px 0px rgba(0,0,0,0.1);
+    box-shadow: -6px 12px 15px 0px rgba(0,0,0,0.1)
 
 }
 
 .d__barChart {
-    margin-right: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,3 +50,34 @@
 }
 
 
+@media screen and (max-width : 1024px) {
+  
+
+   
+    .d__upCharts {
+        display: grid;
+        grid-template-columns: 50% ;
+    }
+
+    .d__map {
+        width: 90vw;
+    }
+
+    .d__barsChart {
+        width: 90vw;
+    }
+
+    .d__timelines {
+        width: 90vw;
+    }
+
+    .d__timelines .canvas {
+        width: 90vw;
+    }
+}
+
+
+
+@media screen and (max-width: 765px) {
+    
+}
